@@ -1,0 +1,5 @@
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.exe
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.exe
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
