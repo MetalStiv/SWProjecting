@@ -45,9 +45,10 @@
   <ItemGroup>
     <Compile Include="CompensatoryHoliday.cs" />
     <Compile Include="CompensatoryRule.cs" />
-    <Compile Include="DataManagement.cs" />
+    <Compile Include="DataLists.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="IDataManager.cs" />
     <Compile Include="Overwork.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="Position.cs" />

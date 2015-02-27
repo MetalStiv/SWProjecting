@@ -7,3 +7,7 @@ C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\Accounti
 C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
 C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.exe
 C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.exe
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.exe
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb

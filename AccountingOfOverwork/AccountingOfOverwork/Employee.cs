@@ -75,14 +75,14 @@ namespace AccountingOfOverwork
             department = _department;
         }
 
-        public double GetPayment()
+        public double GetPayment(IDataManager _dataManager)
         {
-            return position.GetPayment(this);
-        }        
-            
-        public double GetCompensatoryHolidays()
+            return position.GetPayment(this, _dataManager);
+        }
+
+        public double GetCompensatoryHolidays(IDataManager _dataManager)
         {
-            return position.GetCompensatoryHolidays(this);
+            return position.GetCompensatoryHolidays(this, _dataManager);
         }
     }
 }

@@ -43,19 +43,21 @@ namespace AccountingOfOverwork
             hourlyRate = 0.0;
         }
 
-        public double GetPayment(Employee employee)
+        public double GetPayment(Employee _employee, IDataManager _data)
         {
             double moneyToPay = 0.0;
-            foreach (Overwork overwork in DataManagement.overworks)
+            List<Overwork> overworks = _data.GetOwerworksByEmployee(_employee);
+            foreach (Overwork overwork in overworks)
             {
-                if (overwork.getEmployee().Equals(employee))
+                if (overwork.getEmployee().Equals(_employee))
                 {
-                    moneyToPay += overwork.GetPayment(employee.getPosition());
+                    moneyToPay += overwork.GetPayment(_employee.getPosition());
                 }
             }
-            foreach (Payment payment in DataManagement.payments)
+            List<Payment> payments = _data.GetPaymentsByEmployee(_employee);
+            foreach (Payment payment in payments)
             {
-                if (payment.getEmployee().Equals(employee))
+                if (payment.getEmployee().Equals(_employee))
                 {
                     moneyToPay -= payment.getAmount();
                 }
@@ -63,19 +65,21 @@ namespace AccountingOfOverwork
             return moneyToPay;
         }
 
-        public double GetCompensatoryHolidays(Employee employee)
+        public double GetCompensatoryHolidays(Employee _employee, IDataManager _data)
         {
             double hours = 0.0;
-            foreach (Overwork overwork in DataManagement.overworks)
+            List<Overwork> overworks = _data.GetOwerworksByEmployee(_employee);
+            foreach (Overwork overwork in overworks)
             {
-                if (overwork.getEmployee().Equals(employee))
+                if (overwork.getEmployee().Equals(_employee))
                 {
-                    hours += overwork.GetCompensatoryHolidays(employee.getPosition());
+                    hours += overwork.GetCompensatoryHolidays(_employee.getPosition());
                 }
             }
-            foreach (CompensatoryHoliday compensatoryHoliday in DataManagement.compensatoryHolidays)
+            List<CompensatoryHoliday> compensatoryHolidays = _data.GetCompensatoryHolidaysByEmployee(_employee);
+            foreach (CompensatoryHoliday compensatoryHoliday in compensatoryHolidays)
             {
-                if (compensatoryHoliday.getEmployee().Equals(employee))
+                if (compensatoryHoliday.getEmployee().Equals(_employee))
                 {
                     hours -= compensatoryHoliday.getHours();
                 }
