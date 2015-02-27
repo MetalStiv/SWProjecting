@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AccountingOfOverwork
 {
-    public class Overwork
+    public class Overwork : Entity
     {
         private Employee employee;
         private Project project;
@@ -21,8 +21,9 @@ namespace AccountingOfOverwork
             date = new DateTime(2000,1,1);
             hours = 0;
         }
-        public Overwork(Employee _employee, Project _project, DateTime _date, double _hours, CompensatoryRule _compensatoryRule)
+        public Overwork(int _id, Employee _employee, Project _project, DateTime _date, double _hours, CompensatoryRule _compensatoryRule)
         {
+            id = _id; 
             employee = _employee;
             project = _project;
             compensatoryRule = _compensatoryRule;

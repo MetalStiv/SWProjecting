@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AccountingOfOverwork
 {
-    public class Position
+    public class Position : Entity
     {
         private String title;
         private double hourlyRate;
@@ -30,8 +30,9 @@ namespace AccountingOfOverwork
             hourlyRate = _rate;
         }
 
-        public Position(String _title, double _hourlyRate)
+        public Position(int _id, String _title, double _hourlyRate)
         {
+            id = _id;
             title = _title;
             hourlyRate = _hourlyRate;
         }

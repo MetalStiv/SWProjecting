@@ -47,6 +47,7 @@
     <Compile Include="CompensatoryRule.cs" />
     <Compile Include="DataManagement.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Entity.cs" />
     <Compile Include="Overwork.cs" />
     <Compile Include="Payment.cs" />
     <Compile Include="Position.cs" />

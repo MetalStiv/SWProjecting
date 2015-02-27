@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AccountingOfOverwork
 {
-    public class Project
+    public class Project : Entity
     {
         private String name;
         private String platform;
@@ -18,8 +18,9 @@ namespace AccountingOfOverwork
             startTime = new DateTime(2000, 1, 1);
         }
 
-        public Project(String _name, String _platform, DateTime _startTime)
+        public Project(int _id, String _name, String _platform, DateTime _startTime)
         {
+            id = _id;
             name = _name;
             platform = _platform;
             startTime = _startTime;

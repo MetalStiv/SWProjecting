@@ -6,7 +6,7 @@ using System.Text;
 namespace AccountingOfOverwork
 {
     //реально "отгуленные" отгулы)
-    public class CompensatoryHoliday
+    public class CompensatoryHoliday :Entity
     {
         private double hours;
         private Employee employee;
@@ -19,8 +19,9 @@ namespace AccountingOfOverwork
             hours = 0;
         }
 
-        public CompensatoryHoliday(Employee _employee, DateTime _date, double _hours)
+        public CompensatoryHoliday(int _id, Employee _employee, DateTime _date, double _hours)
         {
+            id = _id;
             employee = _employee;
             date = _date;
             hours = _hours;

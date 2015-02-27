@@ -6,7 +6,7 @@ using System.Text;
 namespace AccountingOfOverwork
 {
     //начисленные бонусы за конкретную переработку
-    public class CompensatoryRule
+    public class CompensatoryRule : Entity
     {
         private String title;
         private double paymentCoef;
@@ -19,8 +19,9 @@ namespace AccountingOfOverwork
             holidayCoef = 0;
         }
 
-        public CompensatoryRule(String _title, double _paymentCoef, double _holidayRate)
+        public CompensatoryRule(int _id, String _title, double _paymentCoef, double _holidayRate)
         {
+            id = _id;
             title = _title;
             paymentCoef = _paymentCoef;
             holidayCoef = _holidayRate;

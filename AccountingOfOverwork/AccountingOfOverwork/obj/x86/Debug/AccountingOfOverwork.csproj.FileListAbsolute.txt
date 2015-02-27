@@ -3,3 +3,7 @@ D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOv
 D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
 D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.exe
 D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.exe
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.exe
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb

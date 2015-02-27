@@ -6,7 +6,7 @@ using System.Text;
 namespace AccountingOfOverwork
 {
     //отображает реально выплаченные компенсации за отгулы
-    public class Payment
+    public class Payment : Entity
     {
         private double amount;
         private Employee employee;
@@ -19,8 +19,9 @@ namespace AccountingOfOverwork
             amount = 0;
         }
 
-        public Payment(Employee _employee, DateTime _date, double _amount)
+        public Payment(int _id, Employee _employee, DateTime _date, double _amount)
         {
+            id = _id;
             employee = _employee;
             date = _date;
             amount = _amount;
