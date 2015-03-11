@@ -12,6 +12,7 @@ namespace AccountingOfOverwork.Services
         public EmployeeApi(IRepository<Employee> employeeRepository, IRepository<Position> positionRepository)
         {
             this.employeeRepository = employeeRepository;
+            this.positionRepository = positionRepository;
         }
 
         public List<EmployeeDto> GetEmployees()

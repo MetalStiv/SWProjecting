@@ -15,6 +15,7 @@ namespace AccountingOfOverworks.UI
         {
             var repositoryManagerApi = new RepositoryManagerApi();
             var emloyeesListAction = new ShowEmployeesAction(repositoryManagerApi.GetEmployeeApi());
+            var addAction = new AddAction(repositoryManagerApi.GetEmployeeApi(), repositoryManagerApi.GetPositionApi());
             var demo = new DemoDataGenerator(repositoryManagerApi);
             demo.Generate();
 
@@ -22,6 +23,7 @@ namespace AccountingOfOverworks.UI
                 .Title("Main menu")
                 .Repeatable()
                 .Item("Show Employees List", emloyeesListAction)
+                .Item("Add", addAction) 
                 .Exit("Exit")
                 .GetMenu()
                 .Run();

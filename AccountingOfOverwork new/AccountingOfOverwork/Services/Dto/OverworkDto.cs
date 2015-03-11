@@ -8,7 +8,6 @@ namespace AccountingOfOverwork.Services.Dto
     class OverworkDto
     {
         public EmployeeApi Employee { get; set; }
-        public ProjectDto Project { get; set; }
         public DateTime Date { get; set; }
         public CompensatoryRuleDto CompensatoryRule { get; set; }
         public decimal Hourse { get; set; }
