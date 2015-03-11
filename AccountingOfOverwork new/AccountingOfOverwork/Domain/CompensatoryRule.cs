@@ -33,15 +33,5 @@ namespace AccountingOfOverwork.Domain
             get { return holidayCoef; }
             set { holidayCoef = value; }
         }
-
-        //public double GetExtraPayment(Overwork _overwork, Position position)
-        //{
-        //    return _overwork.getHours() * paymentCoef * position.getHourlyRate();
-        //}
-
-        //public double GetCompensatoryHolidays(Overwork _overwork, Position position)
-        //{
-        //    return _overwork.getHours() * holidayCoef;
-        //}
     }
 }

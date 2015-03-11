@@ -16,3 +16,18 @@ C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debu
 C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
 C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
 C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache

@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AccountingOfOverwork;
-using AccountingOfOverwork.DataAccess;
-using AccountingOfOverwork.Domain;
+using AccountingOfOverwork.Services;
 using Feonufry.CUI.Menu.Builders;
 
 namespace AccountingOfOverworks.UI
@@ -14,10 +13,9 @@ namespace AccountingOfOverworks.UI
     {
         static void Main(string[] args)
         {
-            var employeesRepository = new MemoryRepository<Employee>();
-            var positionsRepository = new MemoryRepository<Position>();
-            var emloyeesListAction = new ShowEmployeesAction(employeesRepository);
-            var demo = new DemoDataGenerator(positionsRepository, employeesRepository);
+            var repositoryManagerApi = new RepositoryManagerApi();
+            var emloyeesListAction = new ShowEmployeesAction(repositoryManagerApi.GetEmployeeApi());
+            var demo = new DemoDataGenerator(repositoryManagerApi);
             demo.Generate();
 
             new MenuBuilder()

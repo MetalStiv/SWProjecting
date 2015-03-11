@@ -1,1 +1,5 @@
-2015/02/28-08:45:30.811 8c8 Delete type=3 #1
+2015/03/07-08:42:00.270 df4 Recovering log #3
+2015/03/07-08:42:00.270 df4 Level-0 table #5: started
+2015/03/07-08:42:00.364 df4 Level-0 table #5: 26795 bytes OK
+2015/03/07-08:42:00.411 df4 Delete type=0 #3
+2015/03/07-08:42:00.411 df4 Delete type=3 #2
