@@ -1,0 +1,34 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:CompensatoryRule.cs" caret="913" fromTop="34" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:Payment.cs" caret="0" fromTop="0" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:Entity.cs" caret="300" fromTop="18" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:CompensatoryHoliday.cs" caret="461" fromTop="17" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:DataAccess/f:IRepository.cs" caret="226" fromTop="10" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:DataAccess/f:MemoryRepository.cs" caret="700" fromTop="29" />
+    <File id="9631D991-345C-4DB4-9DBB-EE09074B807B/d:Actions/f:AddAction.cs" caret="0" fromTop="0" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/f:DemoDataGenerator.cs" caret="2692" fromTop="33" />
+    <File id="9631D991-345C-4DB4-9DBB-EE09074B807B/f:Program.cs" caret="1261" fromTop="29" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:Employee.cs" caret="0" fromTop="0" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:Position.cs" caret="0" fromTop="0" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Services/f:EmployeeDto.cs" caret="213" fromTop="8" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Services/f:EmployeeApi.cs" caret="800" fromTop="23" />
+    <File id="9631D991-345C-4DB4-9DBB-EE09074B807B/d:Actions/f:CalculateAction.cs" caret="1232" fromTop="27" />
+    <File id="9631D991-345C-4DB4-9DBB-EE09074B807B/d:Actions/f:ShowEmployeesAction.cs" caret="689" fromTop="22" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Services/f:PositionAPI.cs" caret="916" fromTop="27" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:Overwork.cs" caret="1504" fromTop="25" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Services/f:CalculatorAPI.cs" caret="1766" fromTop="44" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:CompensatoryRule.cs" caret="913" fromTop="34" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:Employee.cs" caret="1277" fromTop="28" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Domain/f:Overwork.cs" caret="1314" fromTop="29" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/f:DemoDataGenerator.cs" caret="1503" fromTop="29" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Services/f:PositionAPI.cs" caret="34" fromTop="0" />
+    <File id="9631D991-345C-4DB4-9DBB-EE09074B807B/d:Actions/f:CalculateAction.cs" caret="171" fromTop="5" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Services/f:EmployeeDto.cs" caret="213" fromTop="8" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Services/f:EmployeeApi.cs" caret="828" fromTop="24" />
+    <File id="9631D991-345C-4DB4-9DBB-EE09074B807B/d:Actions/f:ShowEmployeesAction.cs" caret="568" fromTop="19" />
+    <File id="22274465-6817-470B-B604-27497AF9B8E7/d:Services/f:CalculatorAPI.cs" caret="1731" fromTop="44" />
+  </RecentEdits>
+</RecentFiles>

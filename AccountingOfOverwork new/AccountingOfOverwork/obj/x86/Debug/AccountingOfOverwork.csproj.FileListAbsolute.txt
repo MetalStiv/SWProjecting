@@ -1,0 +1,32 @@
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.exe
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.exe
+D:\GitHub\SWP\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.exe
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.exe
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.exe
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.exe
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
+C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\Fedukova\Desktop\AccountingOfOverwork\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\it1\Desktop\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
