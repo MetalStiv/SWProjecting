@@ -30,4 +30,3 @@ C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\Acco
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
-C:\Users\555\Desktop\8 семестр\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache

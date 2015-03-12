@@ -21,7 +21,8 @@ namespace AccountingOfOverwork.DataAccess
 
         public void Remove(T entity)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            list.Remove(entity);
         }
 
         public IQueryable<T> AsQueryable()

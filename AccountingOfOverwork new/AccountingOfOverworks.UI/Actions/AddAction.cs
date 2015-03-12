@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AccountingOfOverwork.Domain;
 using AccountingOfOverwork.Services;
+using AccountingOfOverwork.Services.Dto;
 using Feonufry.CUI.Actions;
 using Feonufry.CUI.Menu.Builders;
 
@@ -14,11 +12,13 @@ namespace AccountingOfOverworks.UI
     {
         private readonly EmployeeApi employeeApi;
         private readonly PositionApi positionApi;
+        private readonly CompensatoryRuleApi ruleApi;
 
-        public AddAction(EmployeeApi employeeApi, PositionApi positionApi)
+        public AddAction(EmployeeApi employeeApi, PositionApi positionApi, CompensatoryRuleApi ruleApi)
         {
             this.employeeApi = employeeApi;
             this.positionApi = positionApi;
+            this.ruleApi = ruleApi;
         }
 
         public void Perform(ActionExecutionContext context)
@@ -30,6 +30,12 @@ namespace AccountingOfOverworks.UI
                  submenu.Item()
                     .Title("Employee")
                     .Action(ctx => AddEmployee(ctx));
+                 submenu.Item()
+                        .Title("Position")
+                        .Action(ctx => AddPosition(ctx));
+                 submenu.Item()
+                            .Title("Compensatory Rule")
+                            .Action(ctx => AddRule(ctx));
                  submenu.Exit("Отмена")
                 .GetMenu()
                 .Run();
@@ -40,8 +46,6 @@ namespace AccountingOfOverworks.UI
             var positionsList = positionApi.GetPositions();
             context.Out.WriteLine("Name:");
             string name = context.In.ReadLine();
-            // position
-            //context.Out.WriteLine("position:");
             string positionName = "";
 
             var submenu = new MenuBuilder()
@@ -56,11 +60,9 @@ namespace AccountingOfOverworks.UI
                        .Title(position.Title)
                        .Action(ctx => positionName = PosisionSelect(ctx, positionTitle));
             }
-           // submenu.Exit("Отмена")
            submenu.GetMenu()
            .Run();
 
-            
             context.Out.WriteLine("department:");
             string department = context.In.ReadLine();
             context.Out.WriteLine("address:");
@@ -81,6 +83,37 @@ namespace AccountingOfOverworks.UI
         public string PosisionSelect(ActionExecutionContext context, string positionTitle)
         {
             return positionTitle;
+        }
+
+        public void AddPosition(ActionExecutionContext context)
+        {
+            context.Out.WriteLine("Titel:");
+            string title = context.In.ReadLine();
+            context.Out.WriteLine("Hourly Rate:");
+            decimal hourlyRate = Decimal.Parse(context.In.ReadLine());
+
+            var position = new PositionDto();
+            position.Title = title;
+            position.HourlyRate = hourlyRate;
+
+            positionApi.AddPosition(position);
+        }
+
+        public void AddRule(ActionExecutionContext context)
+        {
+            context.Out.WriteLine("Titel:");
+            string title = context.In.ReadLine();
+            context.Out.WriteLine("Holiday coefficient:");
+            decimal holidayCoef = Decimal.Parse(context.In.ReadLine());
+            context.Out.WriteLine("Payment coefficient:");
+            decimal paymentCoef = Decimal.Parse(context.In.ReadLine());
+
+            var rule = new CompensatoryRuleDto();
+            rule.Title = title;
+            rule.HolidayCoef = holidayCoef;
+            rule.PaymentCoef = paymentCoef;
+
+            ruleApi.AddRule(rule);
         }
     }
 }

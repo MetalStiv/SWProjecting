@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Actions\AddAction.cs" />
     <Compile Include="Actions\CalculateAction.cs" />
+    <Compile Include="Actions\RemoveAction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Actions\ShowEmployeesAction.cs" />

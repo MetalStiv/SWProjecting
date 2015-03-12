@@ -37,8 +37,11 @@ namespace AccountingOfOverwork.Services
 
         public void RemoveEmployee(EmployeeDto employeeDto)
         {
-            var employee = employeeRepository.Get(employeeDto.Id);
-            employeeRepository.Remove(employee);
+            if (employeeDto != null)
+            {
+                var employee = employeeRepository.Get(employeeDto.Id);
+                employeeRepository.Remove(employee);
+            }
         }
     }
 }

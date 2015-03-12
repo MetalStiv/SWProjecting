@@ -34,9 +34,13 @@ namespace AccountingOfOverwork.Services
 
         public void RemovePosition(PositionDto positionDto)
         {
-            var position = positionRepository.AsQueryable()
-                .Single(p => p.Title == positionDto.Title);
-            positionRepository.Remove(position);
+            if (positionDto != null)
+            {
+                var position = positionRepository.AsQueryable()
+                    .Single(p => p.Title == positionDto.Title);
+                positionRepository.Remove(position);
+            }
         }
+    
     }
 }

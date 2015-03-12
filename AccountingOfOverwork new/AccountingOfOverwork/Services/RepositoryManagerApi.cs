@@ -35,5 +35,10 @@ namespace AccountingOfOverwork.Services
         {
             return new PositionApi(positionRepository);
         }
+
+        public CompensatoryRuleApi GetRuleApi()
+        {
+            return new CompensatoryRuleApi(compensatoryRuleRepository);
+        }
     }
 }

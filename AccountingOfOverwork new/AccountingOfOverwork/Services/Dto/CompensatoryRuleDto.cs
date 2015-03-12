@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AccountingOfOverwork.Services.Dto
 {
-    class CompensatoryRuleDto
+    public class CompensatoryRuleDto
     {
         public string Title { get; set; }
         public decimal PaymentCoef { get; set; }
