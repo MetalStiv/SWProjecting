@@ -30,3 +30,13 @@ C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\Acco
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverwork\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.pdb
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverwork\obj\x86\Debug\AccountingOfOverwork.csprojResolveAssemblyReference.cache

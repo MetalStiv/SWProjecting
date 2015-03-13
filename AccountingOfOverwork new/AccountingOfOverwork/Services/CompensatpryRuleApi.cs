@@ -14,7 +14,7 @@ namespace AccountingOfOverwork.Services
             this.ruleRepository = ruleRepository;
         }
 
-        public List<CompensatoryRuleDto> GetRule()
+        public List<CompensatoryRuleDto> GetRules()
         {
             return ruleRepository.AsQueryable()
                 .Select(p => new CompensatoryRuleDto()

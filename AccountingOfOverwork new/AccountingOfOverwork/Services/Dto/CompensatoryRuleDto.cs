@@ -8,6 +8,7 @@ namespace AccountingOfOverwork.Services.Dto
     public class CompensatoryRuleDto
     {
         public string Title { get; set; }
+        public Guid Id { get; set; }
         public decimal PaymentCoef { get; set; }
         public decimal HolidayCoef { get; set; }
     }

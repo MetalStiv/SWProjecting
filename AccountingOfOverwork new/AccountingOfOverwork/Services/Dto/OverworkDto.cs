@@ -5,11 +5,12 @@ using System.Text;
 
 namespace AccountingOfOverwork.Services.Dto
 {
-    class OverworkDto
+    public class OverworkDto
     {
-        public EmployeeApi Employee { get; set; }
+        public Guid Id { get; set; }
+        public Guid EmployeeId { get; set; }
         public DateTime Date { get; set; }
-        public CompensatoryRuleDto CompensatoryRule { get; set; }
+        public Guid CompensatoryRuleId { get; set; }
         public decimal Hourse { get; set; }
     }
 }

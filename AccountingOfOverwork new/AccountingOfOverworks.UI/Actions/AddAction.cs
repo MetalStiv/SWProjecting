@@ -13,12 +13,19 @@ namespace AccountingOfOverworks.UI
         private readonly EmployeeApi employeeApi;
         private readonly PositionApi positionApi;
         private readonly CompensatoryRuleApi ruleApi;
+        private readonly OverworkApi overworkApi;
+        private readonly PaymentApi paymentApi;
+        private readonly CompensatoryHolidayApi holidayApi;
 
-        public AddAction(EmployeeApi employeeApi, PositionApi positionApi, CompensatoryRuleApi ruleApi)
+        public AddAction(EmployeeApi employeeApi, PositionApi positionApi, CompensatoryRuleApi ruleApi,
+            OverworkApi overworkApi, PaymentApi paymentApi, CompensatoryHolidayApi holidayApi)
         {
             this.employeeApi = employeeApi;
             this.positionApi = positionApi;
             this.ruleApi = ruleApi;
+            this.overworkApi = overworkApi;
+            this.paymentApi = paymentApi;
+            this.holidayApi = holidayApi;
         }
 
         public void Perform(ActionExecutionContext context)
@@ -36,6 +43,15 @@ namespace AccountingOfOverworks.UI
                  submenu.Item()
                             .Title("Compensatory Rule")
                             .Action(ctx => AddRule(ctx));
+                 submenu.Item()
+                            .Title("Owerwork")
+                            .Action(ctx => AddOverwork(ctx));
+                 submenu.Item()
+                            .Title("Payment")
+                            .Action(ctx => AddPayment(ctx));
+                 submenu.Item()
+                            .Title("Holiday")
+                            .Action(ctx => AddHoliday(ctx));
                  submenu.Exit("Отмена")
                 .GetMenu()
                 .Run();
@@ -44,7 +60,7 @@ namespace AccountingOfOverworks.UI
         public void AddEmployee(ActionExecutionContext context)
         {
             var positionsList = positionApi.GetPositions();
-            context.Out.WriteLine("Name:");
+            context.Out.Write("Name: ");
             string name = context.In.ReadLine();
             string positionName = "";
 
@@ -63,11 +79,11 @@ namespace AccountingOfOverworks.UI
            submenu.GetMenu()
            .Run();
 
-            context.Out.WriteLine("department:");
+            context.Out.Write("department: ");
             string department = context.In.ReadLine();
-            context.Out.WriteLine("address:");
+            context.Out.Write("address: ");
             string address = context.In.ReadLine();
-            context.Out.WriteLine("passportData:");
+            context.Out.Write("passportData: ");
             string passportData = context.In.ReadLine();
 
             var employee = new EmployeeDto();
@@ -83,6 +99,16 @@ namespace AccountingOfOverworks.UI
         public string PosisionSelect(ActionExecutionContext context, string positionTitle)
         {
             return positionTitle;
+        }
+
+        public Guid EmployeeSelect(ActionExecutionContext context, Guid employeeId)
+        {
+            return employeeId;
+        }
+
+        public Guid RuleSelect(ActionExecutionContext context, Guid ruleId)
+        {
+            return ruleId;
         }
 
         public void AddPosition(ActionExecutionContext context)
@@ -101,11 +127,11 @@ namespace AccountingOfOverworks.UI
 
         public void AddRule(ActionExecutionContext context)
         {
-            context.Out.WriteLine("Titel:");
+            context.Out.Write("Titel: ");
             string title = context.In.ReadLine();
-            context.Out.WriteLine("Holiday coefficient:");
+            context.Out.Write("Holiday coefficient: ");
             decimal holidayCoef = Decimal.Parse(context.In.ReadLine());
-            context.Out.WriteLine("Payment coefficient:");
+            context.Out.Write("Payment coefficient: ");
             decimal paymentCoef = Decimal.Parse(context.In.ReadLine());
 
             var rule = new CompensatoryRuleDto();
@@ -114,6 +140,154 @@ namespace AccountingOfOverworks.UI
             rule.PaymentCoef = paymentCoef;
 
             ruleApi.AddRule(rule);
+        }
+
+        public void AddOverwork(ActionExecutionContext context)
+        {
+            var employeeList = employeeApi.GetEmployees();
+            Guid employeeId = new Guid();
+
+            var submenu = new MenuBuilder()
+                 .Title("Доступные сотрудники:")
+                 .Prompt("Укажите сотрудника:")
+                 .RunnableOnce();
+            foreach (var employee in employeeList)
+            {
+                var employeeName = employee.Name;
+                submenu.Item()
+                       .AlwaysAvailable()
+                       .Title(employee.Name)
+                       .Action(ctx => employeeId = EmployeeSelect(ctx, employee.Id));
+            }
+            submenu.GetMenu()
+            .Run();
+
+            var ruleList = ruleApi.GetRules();
+            Guid ruleId = new Guid();
+
+            submenu = new MenuBuilder()
+                 .Title("Доступные правила компенсации:")
+                 .Prompt("Укажите правило компенсации:")
+                 .RunnableOnce();
+            foreach (var rule in ruleList)
+            {
+                var ruleName = rule.Title;
+                submenu.Item()
+                       .AlwaysAvailable()
+                       .Title(rule.Title)
+                       .Action(ctx => ruleId = RuleSelect(ctx, rule.Id));
+            }
+            submenu.GetMenu()
+            .Run();
+
+            context.Out.Write("date: ");
+
+            DateTime date = new DateTime();
+            while (!DateTime.TryParse(context.In.ReadLine(), out date))
+            {
+                context.Out.Write("date is not valid, try once more: ");
+            }
+
+            context.Out.Write("hourse: ");
+            decimal hourse;
+            while (!Decimal.TryParse(context.In.ReadLine(), out hourse))
+            {
+                context.Out.Write("hourse is not valid, try once more: ");
+            }
+
+            var overwork = new OverworkDto();
+            overwork.Date = date;
+            overwork.Hourse = hourse;
+            overwork.EmployeeId = employeeId;
+            overwork.CompensatoryRuleId = ruleId;
+
+            overworkApi.AddOverwork(overwork);
+        }
+
+        public void AddPayment(ActionExecutionContext context)
+        {
+            var employeeList = employeeApi.GetEmployees();
+            Guid employeeId = new Guid();
+
+            var submenu = new MenuBuilder()
+                 .Title("Доступные сотрудники:")
+                 .Prompt("Укажите сотрудника:")
+                 .RunnableOnce();
+            foreach (var employee in employeeList)
+            {
+                var employeeName = employee.Name;
+                submenu.Item()
+                       .AlwaysAvailable()
+                       .Title(employee.Name)
+                       .Action(ctx => employeeId = EmployeeSelect(ctx, employee.Id));
+            }
+            submenu.GetMenu()
+            .Run();
+
+            context.Out.Write("date: ");
+
+            DateTime date = new DateTime();
+            while (!DateTime.TryParse(context.In.ReadLine(), out date))
+            {
+                context.Out.Write("date is not valid, try once more: ");
+            }
+
+            context.Out.Write("amount: ");
+            decimal amount;
+            while (!Decimal.TryParse(context.In.ReadLine(), out amount))
+            {
+                context.Out.Write("amount is not valid, try once more: ");
+            }
+
+            var payment = new PaymentDto();
+            payment.EmployeeId = employeeId;
+            payment.Date = date;
+            payment.Amount = amount;
+
+            paymentApi.AddPayment(payment);
+        }
+
+        public void AddHoliday(ActionExecutionContext context)
+        {
+            var employeeList = employeeApi.GetEmployees();
+            Guid employeeId = new Guid();
+
+            var submenu = new MenuBuilder()
+                 .Title("Доступные сотрудники:")
+                 .Prompt("Укажите сотрудника:")
+                 .RunnableOnce();
+            foreach (var employee in employeeList)
+            {
+                var employeeName = employee.Name;
+                submenu.Item()
+                       .AlwaysAvailable()
+                       .Title(employee.Name)
+                       .Action(ctx => employeeId = EmployeeSelect(ctx, employee.Id));
+            }
+            submenu.GetMenu()
+            .Run();
+
+            context.Out.Write("date: ");
+
+            DateTime date = new DateTime();
+            while (!DateTime.TryParse(context.In.ReadLine(), out date))
+            {
+                context.Out.Write("date is not valid, try once more: ");
+            }
+
+            context.Out.Write("hours: ");
+            decimal hours;
+            while (!Decimal.TryParse(context.In.ReadLine(), out hours))
+            {
+                context.Out.Write("hours is not valid, try once more: ");
+            }
+
+            var holiday = new CompensatoryHolidayDto();
+            holiday.EmployeeId = employeeId;
+            holiday.Date = date;
+            holiday.Hours = hours;
+
+            holidayApi.AddHoliday(holiday);
         }
     }
 }

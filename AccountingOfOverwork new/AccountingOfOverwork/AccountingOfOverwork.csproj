@@ -54,14 +54,18 @@
     <Compile Include="Domain\Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\Calculator.cs" />
+    <Compile Include="Services\CalculatorApi.cs" />
+    <Compile Include="Services\CompensatoryHolidayApi.cs" />
     <Compile Include="Services\CompensatpryRuleApi.cs" />
     <Compile Include="Services\Dto\CompensatoryHolidayDto.cs" />
     <Compile Include="Services\Dto\CompensatoryRuleDto.cs" />
     <Compile Include="Services\Dto\OverworkDto.cs" />
+    <Compile Include="Services\PaymentApi.cs" />
     <Compile Include="Services\Dto\PaymentDto.cs" />
     <Compile Include="Services\Dto\PositionDto.cs" />
     <Compile Include="Services\EmployeeApi.cs" />
     <Compile Include="Services\Dto\EmployeeDto.cs" />
+    <Compile Include="Services\OverworkApi.cs" />
     <Compile Include="Services\PositionApi.cs" />
     <Compile Include="Services\RepositoryManagerApi.cs" />
   </ItemGroup>

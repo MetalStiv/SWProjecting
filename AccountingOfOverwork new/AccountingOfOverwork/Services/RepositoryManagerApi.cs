@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using AccountingOfOverwork.DataAccess;
 using AccountingOfOverwork.Domain;
+using AccountingOfOverwork.Services.Dto;
 
 namespace AccountingOfOverwork.Services
 {
@@ -39,6 +40,26 @@ namespace AccountingOfOverwork.Services
         public CompensatoryRuleApi GetRuleApi()
         {
             return new CompensatoryRuleApi(compensatoryRuleRepository);
+        }
+
+        public OverworkApi GetOwerworkApi()
+        {
+            return new OverworkApi(overworkRepository, employeeRepository, compensatoryRuleRepository);
+        }
+
+        public PaymentApi GetPaymentApi()
+        {
+            return new PaymentApi(paymentRepository, employeeRepository);
+        }
+
+        public CompensatoryHolidayApi GetHolidayApi()
+        {
+            return new CompensatoryHolidayApi(compensatoryHolidayRepository, employeeRepository);
+        }
+
+        public CalculatorApi GetCalculatorApi()
+        {
+            return new CalculatorApi(employeeRepository, overworkRepository, paymentRepository,compensatoryHolidayRepository);
         }
     }
 }

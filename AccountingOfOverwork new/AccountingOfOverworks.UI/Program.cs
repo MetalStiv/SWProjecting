@@ -15,16 +15,20 @@ namespace AccountingOfOverworks.UI
         static void Main(string[] args)
         {
             var repositoryManagerApi = new RepositoryManagerApi();
-            var emloyeesListAction = new ShowEmployeesAction(repositoryManagerApi.GetEmployeeApi());
-            var addAction = new AddAction(repositoryManagerApi.GetEmployeeApi(), repositoryManagerApi.GetPositionApi(), repositoryManagerApi.GetRuleApi());
+            var emloyeesListAction = new ShowEmployeesAction(repositoryManagerApi.GetEmployeeApi(), repositoryManagerApi.GetPositionApi(), repositoryManagerApi.GetRuleApi(),
+                repositoryManagerApi.GetOwerworkApi(), repositoryManagerApi.GetPaymentApi(), repositoryManagerApi.GetHolidayApi());
+            var addAction = new AddAction(repositoryManagerApi.GetEmployeeApi(), repositoryManagerApi.GetPositionApi(), repositoryManagerApi.GetRuleApi(),
+                repositoryManagerApi.GetOwerworkApi(), repositoryManagerApi.GetPaymentApi(), repositoryManagerApi.GetHolidayApi());
             var removeAction = new RemoveAction(repositoryManagerApi.GetEmployeeApi(), repositoryManagerApi.GetPositionApi(), repositoryManagerApi.GetRuleApi());
+            var calculateAction = new CalculateAction(repositoryManagerApi.GetCalculatorApi(), repositoryManagerApi.GetEmployeeApi());
             var demo = new DemoDataGenerator(repositoryManagerApi);
             demo.Generate();
 
             new MenuBuilder()
                 .Title("Main menu")
                 .Repeatable()
-                .Item("Show Employees List", emloyeesListAction)
+                .Item("Show", emloyeesListAction)
+                .Item("Calculate money and hourse", calculateAction)
                 .Item("Add", addAction)
                 .Item("Remove", removeAction) 
                 .Exit("Exit")

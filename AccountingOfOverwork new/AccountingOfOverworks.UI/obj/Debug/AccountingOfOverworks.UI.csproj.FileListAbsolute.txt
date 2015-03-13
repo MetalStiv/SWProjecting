@@ -29,3 +29,21 @@ C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\Acco
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.exe
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.pdb
 C:\Users\Степа\Desktop\SWProject\SWProjecting\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.csprojResolveAssemblyReference.cache
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverworks.UI.exe.config
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.exe
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.pdb
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverworks.UI.exe
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverworks.UI.pdb
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverwork.dll
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\Feonufry.CUI.dll
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverwork.pdb
+C:\Users\Степа\Desktop\SWProject\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.csprojResolveAssemblyReference.cache
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverworks.UI.exe.config
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.exe
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.pdb
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\obj\Debug\AccountingOfOverworks.UI.csprojResolveAssemblyReference.cache
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverworks.UI.exe
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverworks.UI.pdb
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverwork.dll
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\Feonufry.CUI.dll
+C:\Users\555\Desktop\AccountingOfOverwork СТЕПА 12.03\AccountingOfOverwork new\AccountingOfOverworks.UI\bin\Debug\AccountingOfOverwork.pdb

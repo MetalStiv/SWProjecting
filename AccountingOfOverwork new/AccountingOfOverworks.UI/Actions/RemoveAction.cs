@@ -91,7 +91,7 @@ namespace AccountingOfOverworks.UI.Actions
         public void RemoveRule(ActionExecutionContext context)
         {
             CompensatoryRuleDto selectedRule = null;
-            var rules = ruleApi.GetRule();
+            var rules = ruleApi.GetRules();
             var submenu = new MenuBuilder()
                  .Title("Имеющиеся правила:")
                  .Prompt("Укажите правило для удаления:")

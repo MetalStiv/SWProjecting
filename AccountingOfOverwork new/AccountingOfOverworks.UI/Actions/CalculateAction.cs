@@ -3,37 +3,90 @@ using System.Collections.Generic;
 using System.Linq;
 using Feonufry.CUI.Actions;
 using AccountingOfOverwork.Domain;
+using AccountingOfOverwork.Services;
+using AccountingOfOverwork.Services.Dto;
+//using Feonufry.CUI.Actions;
+using Feonufry.CUI.Menu.Builders;
 
 namespace AccountingOfOverworks.UI.Actions
 {
     class CalculateAction : IAction
     {
-        private readonly IRepository<Employee> employeesReposiotry;
-        private readonly IRepository<Overwork> overworksReposiotry;
-        private readonly IRepository<Payment> paymentsReposiotry;
-        private readonly IRepository<CompensatoryHoliday> compensatoryHolidaysReposiotry;
+        private readonly CalculatorApi calculatorApi;
+        private readonly EmployeeApi employeeApi;
 
-        public CalculateAction(IRepository<Employee> employeesReposiotry, IRepository<Overwork> overworksReposiotry,
-            IRepository<Payment> paymentsReposiotry, IRepository<CompensatoryHoliday> compensatoryHolidaysReposiotry)
+        public CalculateAction(CalculatorApi calculatorApi, EmployeeApi employeeApi)
         {
-            this.employeesReposiotry = employeesReposiotry;
-            this.overworksReposiotry = overworksReposiotry;
-            this.paymentsReposiotry = paymentsReposiotry;
-            this.compensatoryHolidaysReposiotry = compensatoryHolidaysReposiotry;
+            this.calculatorApi = calculatorApi;
+            this.employeeApi = employeeApi;
         }
 
         public void Perform(ActionExecutionContext context)
         {
-            var employees = employeesReposiotry.AsQueryable().ToList();
-            int index = 1;
-            foreach (var employee in employees)
+            var submenu = new MenuBuilder()
+                 .Title("Доступные действия:")
+                 .Prompt("Выбирете действие:")
+                 .RunnableOnce();
+            submenu.Item()
+               .Title("Calculate money")
+               .Action(ctx => CalculateMoney(ctx));
+            submenu.Item()
+                   .Title("Calculate holidays")
+                   .Action(ctx => CalculateHolidays(ctx));
+            submenu.Exit("Отмена")
+           .GetMenu()
+           .Run();
+        }
+
+        public Guid EmployeeSelect(ActionExecutionContext context, Guid employeeId)
+        {
+            return employeeId;
+        }
+
+        public void CalculateMoney(ActionExecutionContext context)
+        {
+            var employeeList = employeeApi.GetEmployees();
+            Guid employeeId = new Guid();
+
+            var submenu = new MenuBuilder()
+                 .Title("Доступные сотрудники:")
+                 .Prompt("Укажите сотрудника:")
+                 .RunnableOnce();
+            foreach (var employee in employeeList)
             {
-                context.Out.WriteLine(index + "  " + employee.Name);
-                index++;
+                var employeeName = employee.Name;
+                submenu.Item()
+                       .AlwaysAvailable()
+                       .Title(employee.Name)
+                       .Action(ctx => employeeId = EmployeeSelect(ctx, employee.Id));
             }
-            context.Out.WriteLine("Enter id of employee you want to calculate:  ");
-            index = Int32.Parse(Console.ReadLine()) - 1;
-            //context.Out.WriteLine("To pay:  {0}", );
+            submenu.GetMenu()
+            .Run();
+
+            Console.WriteLine("To pay: {0}", calculatorApi.GetPayment(employeeId));
+        }
+
+        public void CalculateHolidays(ActionExecutionContext context)
+        {
+            var employeeList = employeeApi.GetEmployees();
+            Guid employeeId = new Guid();
+
+            var submenu = new MenuBuilder()
+                 .Title("Доступные сотрудники:")
+                 .Prompt("Укажите сотрудника:")
+                 .RunnableOnce();
+            foreach (var employee in employeeList)
+            {
+                var employeeName = employee.Name;
+                submenu.Item()
+                       .AlwaysAvailable()
+                       .Title(employee.Name)
+                       .Action(ctx => employeeId = EmployeeSelect(ctx, employee.Id));
+            }
+            submenu.GetMenu()
+            .Run();
+
+            Console.WriteLine("To pay: {0}", calculatorApi.GetCompensatoryHolidays(employeeId));
         }
     }
 }

@@ -19,6 +19,10 @@ namespace AccountingOfOverwork
         {
             var positionApi = repositoryManager.GetPositionApi();
             var employeeApi = repositoryManager.GetEmployeeApi();
+            var ruleApi = repositoryManager.GetRuleApi();
+            var holidayApi = repositoryManager.GetHolidayApi();
+            var paymentApi = repositoryManager.GetPaymentApi();
+            var overworkApi = repositoryManager.GetOwerworkApi();
 
             var position1 = new PositionDto();
             position1.Title = "Programmer";
@@ -46,15 +50,36 @@ namespace AccountingOfOverwork
             employee2.PassportData = "2000 654321";
             employeeApi.AddEmployee(employee2);
 
+            var compensatoryRule1 = new CompensatoryRuleDto();
+            compensatoryRule1.Title = "first";
+            compensatoryRule1.HolidayCoef = 2;
+            compensatoryRule1.PaymentCoef = 1;
+            ruleApi.AddRule(compensatoryRule1);
 
-            //var compensatoryRule1 = new CompensatoryRule("first", 2, 1);
-            //var compensatoryRule2 = new CompensatoryRule("second", 2, 1);
-            //overworksRepository.Add(overwork1);
-            //overworksRepository.Add(overwork2);
-            //var payment1 = new Payment(employee1, new DateTime(2015, 1, 24), 2500);
-            //paymentsRepository.Add(payment1);
-            //var compansatoryHoliday1 = new CompensatoryHoliday(employee1, new DateTime(2015, 1, 22), 4);
-            //holidaysRepository.Add(compansatoryHoliday1);
+            var compensatoryRule2 = new CompensatoryRuleDto();
+            compensatoryRule2.Title = "second";
+            compensatoryRule2.HolidayCoef = 1;
+            compensatoryRule2.PaymentCoef = 2;
+            ruleApi.AddRule(compensatoryRule2);
+
+            var overwork1 = new OverworkDto();
+            overwork1.CompensatoryRuleId = compensatoryRule1.Id;
+            overwork1.Date = new DateTime(2015, 1, 24);
+            overwork1.EmployeeId = employee1.Id;
+            overwork1.Hourse = 3;
+            overworkApi.AddOverwork(overwork1);
+
+            var payment1 = new PaymentDto();
+            payment1.EmployeeId = employee1.Id;
+            payment1.Date = new DateTime(2015, 4, 2);
+            payment1.Amount = 200;
+            paymentApi.AddPayment(payment1);
+
+            var holiday1 = new CompensatoryHolidayDto();
+            holiday1.EmployeeId = employee1.Id;
+            holiday1.Date = new DateTime(2015, 2, 2);
+            holiday1.Hours = 8;
+            holidayApi.AddHoliday(holiday1);
         }
     }
 }
